@@ -13,7 +13,7 @@ class Clicker extends Component {
     render() {
         return (
             <div className="Clicker">
-                <h1>{ this.state.num }</h1>
+                <h1>{ (this.state.num !== 7) ? this.state.num : `Congreaturation🎉🎊🎇` }</h1>
                 <button onClick={ this.clicKer }>click me!</button>
             </div>
         );
